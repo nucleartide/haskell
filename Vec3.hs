@@ -12,11 +12,11 @@ new x y z =
 --
 -- Compute the magnitude of a vector.
 --
--- The parentheses should make the evaluation steps more clear.
+-- Because of lazy evaluation, you should beta-reduce the `$` first.
 --
 
 magnitude x y z =
-  (sqrt $) (x^2 + y^2 + z^2)
+  sqrt $ x^2 + y^2 + z^2
 
 --
 -- Normalize a vector.
