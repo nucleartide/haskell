@@ -12,6 +12,10 @@ new x y z =
 --
 -- Compute the magnitude of a vector.
 --
+-- Note: think of `sqrt` as having no argument. Since we can't evaluate `sqrt`
+-- any further, we evaluate the `^` expressions next, which have the next
+-- highest precedence.
+--
 
 magnitude x y z =
   sqrt $ x^2 + y^2 + z^2
