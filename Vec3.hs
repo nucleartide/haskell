@@ -12,13 +12,11 @@ new x y z =
 --
 -- Compute the magnitude of a vector.
 --
--- Note: think of `sqrt` as having no argument. Since we can't apply `sqrt` to
--- an argument, we apply the exponents next. Exponentiation has the next highest
--- precedence.
+-- The parentheses should make the evaluation steps more clear.
 --
 
 magnitude x y z =
-  sqrt $ x^2 + y^2 + z^2
+  (sqrt $) (x^2 + y^2 + z^2)
 
 --
 -- Normalize a vector.
