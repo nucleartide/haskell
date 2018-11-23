@@ -1,0 +1,6 @@
+- humans have limited short-term memory; let the compiler do the work of keeping track
+- ALGOL68 had lots of modern language features
+- cure for scurvy forgotten multiple times
+- do what's appropriate for you re: exercises
+- spaced repetition is more effective; _don't try to do all the exercises in one pass_
+  - i guess a good antidote is to have source to refer back to

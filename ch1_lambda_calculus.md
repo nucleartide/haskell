@@ -1,0 +1,13 @@
+- lambda calculus has 3 lambda terms
+  - expressions
+    - can be variable name, abstraction, or combination of the 2
+  - variables
+    - this is a name for a potential input to a function
+  - abstractions
+    - an abstraction is a function
+    - has a head (a lambda)
+      - literally a lambda: 𝜆
+      - followed by a variable name x
+      - full example: 𝜆x
+    - has a body
+    - is applied to an argument. an argument is an input value.
