@@ -31,3 +31,13 @@ anonNested =
 
 - `fromIntegral`, force a typeclass
 - haskell has type inference, which is based on the Damas-Hindley-Milner type system
+
+- principal type
+  - most generic type which still typechecks, when running through type inference
+
+- parametricity
+  - property that holds in the presence of parametric polymorphism
+  - example: `a -> a` has the exact same behavior for every type
+
+- adhoc polymorphism
+  - adhoc, because each instance of typeclass has its own ad-hoc behavior

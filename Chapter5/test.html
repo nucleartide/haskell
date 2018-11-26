@@ -1,0 +1,4 @@
+a=0x3200 poke(a+65,20)r={}c={8,5,6,3,4,1,4,5}t=0 f=flr::_::b=t%8+1 m=f(t/8)%8+1
+if(m==1)r[b]=f(rnd(3))*2 q=q==r[b]and q-1 or r[b] n=q-1+c[m]o=1+f(n/7)i=n%7+1
+p=12*o+(i*2-f(i/4))poke(a,p)t+=1 ?"♪",n*8+8,120,i+7 ?" "
+sfx(0)while-1!=stat(16)do end goto _
