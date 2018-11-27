@@ -1,0 +1,9 @@
+- haskell has no diamond inheritance, because when a typeclass has multiple
+  parent classes, method names must be unique
+
+- can declare more specific (monomorphic) functions from more general
+  (polymorphic) functions
+
+```
+add = (+) :: Integer -> Integer -> Integer
+```

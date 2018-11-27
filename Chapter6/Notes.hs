@@ -15,6 +15,7 @@ data DayOfWeek
   | Fri
   | Sat
   | Sun
+  deriving (Ord, Show)
 
 data Date
   = Date DayOfWeek Int
@@ -35,6 +36,9 @@ instance Eq Date where
 -- need to set -Wall, wtf
 -- avoid partial functions; that is, functions that don't pattern match all
 -- possibilities
+
+-- also avoid partial typeclass instances
+-- make sure to fill out the implementation!
 
 f :: Int -> Bool
 f 2 = True
@@ -95,3 +99,15 @@ instance (Eq a, Eq b) => Eq (EitherOr a b) where
   (==) (Hello a) (Hello b) = a == b
   (==) (Goodbye a) (Goodbye b) = a == b
   (==) _ _ = False
+
+-- make Friday the greatest day, heh
+instance Ord DayOfWeek where
+  compare Fri Fri = EQ
+  compare Fri _   = GT
+  compare _   Fri = LT
+  compare _   _   = EQ
+
+data Mood = Blah
+
+instance Show Mood where
+  show _ = "Blah"
